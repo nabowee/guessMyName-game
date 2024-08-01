@@ -14,7 +14,7 @@ let highScore = 0;
 inputNumber.addEventListener("input", () => {
   inputNumber.value = inputNumber.value.replace(/[^0-9]/g, "");
 
-  if (inputNumber.value > 20 || inputNumber.value < 0) {
+  if (inputNumber.value > 20 || inputNumber.value < 1) {
     inputNumber.value = "";
     displayMessage.textContent = "Between 1 and 20!";
   }
